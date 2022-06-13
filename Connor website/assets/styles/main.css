@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --bage: #FCF8F1; /* For backgrounds */
+    --lightbage: #F8F0E6; /* For albums page extra album */
+    --grey: #777167; /* For text light background */
+    --white: #FFFFFF; /* For white backgrounds */
+    --terrakota: #C6896B; 
+    --darkbrown: #241B06; /* For background and text */
+    --darkyellow: #D59700; /* For yellow hovers */
+    --yellow: #F8B000; /* Main yellow */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+.grid-container {
+    max-width: 1192px;
+    margin: 0 auto;
+}
+
+
+/* Main navigation begins */
+
+.main-nav {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links > ul {
+    display: flex;
+    gap: 3.333rem;
+}
+
+.nav-links > ul > li {
+    list-style-type: none;
+}
+
+.nav-links > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+.nav-links > ul > li > a:hover {
+    color: var(--yellow);
+}
+
+/* Main navigation ends */

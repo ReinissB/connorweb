@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #EBE0C8;
+}
+
+/* Introduction */
+
+.intro-img {
+    margin-top: 5rem;
+}
+
+.intro-curvy {
+    margin-top: 5.6rem;
+    position: absolute;
+    left: 45vh
+}
+
+.intro-p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #241B06;
+    padding: 5rem 13rem;
+}
+
+/* Story part starts*/
+
+.mystory {
+    background-color:#241B06;
+    background-image: url("../img/mystory/Sun.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding-top: 150px;
+   
+}
+
+.mystory-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 48px;
+    height: 1767px;
+}
+
+.mystory-sections {
+    width: 356px;
+    color: #EBE0C8;
+}
+
+.mystory-section-1 {
+    grid-column: 1/2;
+}
+
+.mystory-section-2 {
+    grid-column: 2/3;
+    padding-top: 3rem;
+}
+.mystory-section-3 {
+    grid-column: 3/4;
+}
+
+.middle-p {
+    color: #F8B000;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color:#F8B000;
+    font-size: 2rem;
+    font-weight: 600 ;
+    text-transform: uppercase;
+}
+
+.douplealbum-h2 {
+    font-weight: 300;
+}
+
+/* Go to song page section */
+.story-songpage {
+    grid-column: 2/3;
+}
+
+h3 {
+    color: #F8B000;
+    text-align: center;
+}
+
+.songpage-btn {
+    background-color: #C6896B;
+    margin: 2rem 4rem;
+    padding:1.5rem 1rem;
+    /* this is not right for sure */
+    /* transform: skew(-3deg, -1deg);  */
+    clip-path: polygon(2% 15%, 500% 0%, 100% 100%, 0% 100%);
+} 
+
+h5 > a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
