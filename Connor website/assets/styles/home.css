@@ -1,8 +1,15 @@
 /* Header begins */
-
 header {
-    background-color: var(--darkbrown);
     height: 100vh;
+}
+
+#myVideo {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--darkbrown);
 }
 
 article.header-title {
