@@ -5,7 +5,7 @@
 }
 
 main {
-    background-color: #EBE0C8;
+    background-color: var(--bage);
 }
 
 /* Introduction */
@@ -23,14 +23,14 @@ main {
 .intro-p {
     font-size: 1.6rem;
     font-weight: 500;
-    color: #241B06;
+    color: var(--darkbrown);
     padding: 5rem 13rem;
 }
 
 /* Story part starts*/
 
 .mystory {
-    background-color:#241B06;
+    background-color: var(--darkbrown);
     background-image: url("../img/mystory/Sun.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -43,12 +43,13 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 48px;
+    grid-template-rows: auto;
     height: 1767px;
 }
 
 .mystory-sections {
     width: 356px;
-    color: #EBE0C8;
+    color: var(--bage);
 }
 
 .mystory-section-1 {
@@ -65,43 +66,68 @@ main {
 
 .middle-section {
     grid-column: 2/3;
-}
+} 
 
 .middle-p {
-    color: #F8B000;
+    color: var(--yellow);
     text-align: center;
     margin-bottom: 1rem;
+    padding-top: 6rem;
+    align-self: center;
 }
 
 .terrakota-curvy {
     position: absolute;
-    left: 100vh;
+    left: 102vh;
+}
+
+.left-arrow {
+    grid-column: 1/2;
+    padding: 4rem 0 0 7rem;
+}
+
+.right-arrow {
+    grid-column: 3/4;
+}
+
+.right-arrow-bottom {
+    grid-column: 3/4;
+    position: relative;
+    bottom: 22vh;
 }
 
 /* Headings */
 h2 {
-    color:#F8B000;
+    color: var(--yellow);
     font-size: 2rem;
     font-weight: 600 ;
     text-transform: uppercase;
+    margin: 1.5rem 0;
 }
 
 .douplealbum-h2 {
     font-weight: 300;
 }
 
+/* SVG */
+.mystory-lightning {
+    position: absolute;
+}
+
+
 /* Go to song page section */
+
 .story-songpage {
     grid-column: 2/3;
 }
 
 h3 {
-    color: #F8B000;
+    color: var(--yellow);
     text-align: center;
 }
 
 .songpage-btn {
-    background-color: #C6896B;
+    background-color: var(--terrakota);
     margin: 2rem 4rem;
     padding:1.5rem 1rem;
     /* this is not right for sure */
@@ -109,7 +135,11 @@ h3 {
     clip-path: polygon(2% 15%, 500% 0%, 100% 100%, 0% 100%);
 } 
 
+.songpage-btn :hover {
+    background-color: var(--darkyellow);
+}
+
 h5 > a {
-    color: #FFFFFF;
+    color: var(--white);
     text-decoration: none;
 }
