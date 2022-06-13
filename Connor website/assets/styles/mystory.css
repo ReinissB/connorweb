@@ -63,10 +63,19 @@ main {
     grid-column: 3/4;
 }
 
+.middle-section {
+    grid-column: 2/3;
+}
+
 .middle-p {
     color: #F8B000;
-    grid-column: 2/3;
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+.terrakota-curvy {
+    position: absolute;
+    left: 100vh;
 }
 
 /* Headings */
