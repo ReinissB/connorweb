@@ -124,8 +124,7 @@ article.header-title {
     padding-bottom: 2.222rem;
 }
 
-.btn-full-story {
-    background-color: var(--yellow);
+.btn {
     transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
     -moz-transition: 0.2s ease-in;
@@ -136,13 +135,17 @@ article.header-title {
     clip-path: polygon(1% 5%, 100% 0, 100% 100%, 0 100%);
 }
 
-.btn-full-story > a {
+.btn-full-story {
+    background-color: var(--yellow);
+}
+
+.btn > a {
     text-decoration: none;
     color: var(--white);
     padding: 18px 50px 18px 50px;
 }
 
-.btn-full-story:hover {
+.btn:hover {
     background-color: var(--darkyellow);
 }
 
@@ -184,7 +187,7 @@ article.header-title {
     clip-path: polygon(3% 0, 100% 0, 97% 100%, 0% 100%);
 }
 
-.new-single h2 {
+.y-h2-title {
     font-size: 1.944rem;
     color: var(--yellow);
     padding-bottom: 20px;
@@ -271,9 +274,14 @@ article.header-title {
     clip-path: polygon(0 0, 98% 2%, 100% 100%, 0 100%);
     height: max-content;
     align-items: center;
-    margin-bottom: 20px;
+    row-gap: 30px;
 }
 
+.upcoming-events-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .event-content {
     padding-left: 40px;
     padding-right: 40px;
@@ -328,6 +336,45 @@ p.date::before {
     margin-right: 10px;
 }
 
-/* Upcoming events end */
-/* Events end */
 
+.thumbnail {
+    position: relative;
+    display: flex;
+}
+
+h2.img-date {
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--yellow);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Upcoming events section ends */
+/* Events section ends */
+
+
+/* Contact section starts */
+
+.contact p {
+    padding-top: 25px;
+    color: var(--white);
+}
+
+.contact {
+    text-align: center;
+    background-color: var(--darkbrown);
+    padding: 80px 0 80px 0;
+}
+
+.btn-contact-me {
+    background-color: var(--terrakota);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* Contact section ends */
