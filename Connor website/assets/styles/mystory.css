@@ -28,7 +28,6 @@ main {
 }
 
 /* Story part starts*/
-
 .mystory {
     background-color: var(--darkbrown);
     background-image: url("../img/mystory/Sun.jpg");
@@ -50,6 +49,7 @@ main {
 .mystory-sections {
     width: 356px;
     color: var(--bage);
+    z-index: 1;
 }
 
 .mystory-section-1 {
@@ -64,6 +64,8 @@ main {
     grid-column: 3/4;
 }
 
+
+/* Middle section */
 .middle-section {
     grid-column: 2/3;
 } 
@@ -75,6 +77,7 @@ main {
     padding-top: 6rem;
     align-self: center;
 }
+
 
 /* Headings */
 h2 {
@@ -90,8 +93,45 @@ h2 {
 }
 
 /* SVG */
-.stars {
- 
+.mystory-section-1 .mystory-yellow-curvy-top {
+    position: relative;
+    bottom: 25px;
+    right: 15px;
+    z-index: -1;
+}
+
+
+.mystory-section-2 .mystory-square {
+    position: relative ;
+    bottom: 25px;
+    right: 70px;
+    z-index: -1;
+}
+
+.mystory-section-3 .mystory-stars {
+    position: relative ;
+    top: 20px;
+    right: 50px;
+}
+
+.mystory-section-1 .mystory-circle{
+    position: relative;
+    bottom: 15px;
+    right: 45px;
+    z-index: -1;
+}
+
+.mystory-section-2 .mystory-lightnings {
+    position: relative ;
+    top: 3px;
+    right: 107px;
+}
+
+.mystory-section-3 .mystory-yellow-curvy-bottom {
+    position: relative;
+    top: 10px;
+    right: 12px;
+    z-index: -1;
 }
 
 .terrakota-curvy {
@@ -114,15 +154,12 @@ h2 {
     bottom: 22vh;
 }
 
-.mystory-lightning {
-    position: absolute;
-}
-
 
 /* Go to song page section */
 
 .story-songpage {
     grid-column: 2/3;
+    margin: 4rem 0;
 }
 
 h3 {
@@ -134,17 +171,14 @@ h3 {
     display: flex;
     background-color: var(--terrakota);
     margin: 2rem 4rem;
-    padding:1rem; 
+    padding:1rem;
     clip-path: polygon(1% 5%, 100% 0, 100% 100%, 0 100%);
     transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
     -moz-transition: 0.2s ease-in;
     -ms-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
-    display: flex;
-    width: fit-content;
 } 
-
 
 h5 > a {
     color: var(--white);
