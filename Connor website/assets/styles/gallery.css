@@ -112,8 +112,24 @@ body {
 }
 
 .musicpage-btn {
+    display: flex;
     background-color: var(--terrakota);
+    text-align: center;
     margin: 2rem 4rem;
-    padding:1.5rem 1rem;
-    clip-path: polygon(2% 15%, 500% 0%, 100% 100%, 0% 100%);
+    padding: 1rem 2.5rem;
+    clip-path: polygon(1% 5%, 100% 0, 100% 100%, 0 100%);
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+} 
+
+h5 > a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.musicpage-btn:hover {
+    background-color: var(--darkyellow);
 }
