@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="ic_clock" transform="translate(-892 -1468)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="10" cy="10" r="10" transform="translate(898 1474)" fill="#f8b000"/>
+    <g id="Group_27" data-name="Group 27" transform="translate(892 1468)">
+      <path id="Path_25" data-name="Path 25" d="M0,0H26V26H0Z" fill="none"/>
+      <path id="Path_26" data-name="Path 26" d="M13,24A11,11,0,1,1,24,13,11,11,0,0,1,13,24Zm0-2.2A8.8,8.8,0,1,0,4.2,13,8.8,8.8,0,0,0,13,21.8ZM14.1,13h4.4v2.2H11.9V7.5h2.2Z" transform="translate(0 0)" fill="#44210e"/>
+    </g>
+  </g>
+</svg>
