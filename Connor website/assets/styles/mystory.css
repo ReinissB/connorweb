@@ -157,7 +157,7 @@ h2 {
 
 /* Go to song page section */
 
-.story-songpage {
+.story-musicpage {
     grid-column: 2/3;
     margin: 4rem 0;
 }
@@ -167,7 +167,7 @@ h3 {
     text-align: center;
 }
 
-.songpage-btn {
+.musicpage-btn {
     display: flex;
     background-color: var(--terrakota);
     margin: 2rem 4rem;
@@ -189,6 +189,6 @@ h5 {
     margin:0 1rem;
 }
 
-.songpage-btn:hover {
+.musicpage-btn:hover {
     background-color: var(--darkyellow);
 }
