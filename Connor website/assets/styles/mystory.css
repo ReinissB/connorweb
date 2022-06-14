@@ -76,6 +76,24 @@ main {
     align-self: center;
 }
 
+/* Headings */
+h2 {
+    color: var(--yellow);
+    font-size: 2rem;
+    font-weight: 600 ;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
+.douplealbum-h2 {
+    font-weight: 300;
+}
+
+/* SVG */
+.stars {
+ 
+}
+
 .terrakota-curvy {
     position: absolute;
     left: 102vh;
@@ -96,20 +114,6 @@ main {
     bottom: 22vh;
 }
 
-/* Headings */
-h2 {
-    color: var(--yellow);
-    font-size: 2rem;
-    font-weight: 600 ;
-    text-transform: uppercase;
-    margin: 1.5rem 0;
-}
-
-.douplealbum-h2 {
-    font-weight: 300;
-}
-
-/* SVG */
 .mystory-lightning {
     position: absolute;
 }
@@ -127,19 +131,30 @@ h3 {
 }
 
 .songpage-btn {
+    display: flex;
     background-color: var(--terrakota);
     margin: 2rem 4rem;
-    padding:1.5rem 1rem;
-    /* this is not right for sure */
-    /* transform: skew(-3deg, -1deg);  */
-    clip-path: polygon(2% 15%, 500% 0%, 100% 100%, 0% 100%);
+    padding:1rem; 
+    clip-path: polygon(1% 5%, 100% 0, 100% 100%, 0 100%);
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    display: flex;
+    width: fit-content;
 } 
 
-.songpage-btn :hover {
-    background-color: var(--darkyellow);
-}
 
 h5 > a {
     color: var(--white);
     text-decoration: none;
+}
+
+h5 {
+    margin:0 1rem;
+}
+
+.songpage-btn:hover {
+    background-color: var(--darkyellow);
 }
