@@ -4,7 +4,167 @@ body {
     background-color: var(--bage);
 }
 
+header {
+    background-color: var(--darkbrown);
+}
 
-
+.main-nav {
+    padding-bottom: 50px;
+}
 
 /* Main navigation ends */
+
+/* New single section starts  */
+
+.new-single {
+    margin-top: 70px;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+/* New single section ends  */
+
+/* Albums and singles section start */
+
+.music {
+    margin-top: 100px;
+}
+
+.main-music-title {
+    font-size: 1.944rem;
+    color: var(--darkbrown);
+    margin-bottom: 40px;
+}
+
+.cards-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+
+.m-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-date {
+    color: var(--yellow);
+    padding: 8px 0 4px 0;
+}
+
+.music-title {
+    color: var(--darkbrown);
+    font-size: 1.333rem;
+}
+
+.albums {
+    margin-bottom: 100px;
+}
+
+.singles {
+    margin-bottom: 100px;
+}
+
+.card-soon {
+    background-color: var(--darkerbage);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 35px 0 35px;
+    height: 384px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-soon {
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+}
+
+
+/* Albums and singles section end */
+
+/* Card hover starts */
+
+.m-card {
+    position: relative;
+}
+
+.hoverContent {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    width: 100%;
+    padding: 35px;
+}
+
+.collaborators {
+    padding: 25px 0 25px 0;
+}
+
+.collaborators p, h5 {
+    font-size: 18px;
+}
+
+.collaborators p {
+    padding: 5px 0 0 0;
+}
+
+.collaborators h5 {
+    color: var(--darkbrown);
+}
+
+.listen-hover > h4 {
+    padding-top: 0;
+    color: var(--darkbrown);
+    font-weight: 500;
+}
+
+.btn-download {
+    padding-top: 20px;
+}
+
+.btn-download a {
+    font-size: 18px;
+    color: var(--grey);
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+.btn-download a::before {
+    content: "";
+    display: flex;
+    background: url('../img/ic_download.svg') no-repeat;
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.btn-download a:hover {
+    color: var(--yellow);
+}
+
+.m-card:hover .hoverContent {
+    opacity: 1;
+    height: auto;
+}
+
+/* Card hover ends */

@@ -93,11 +93,6 @@ article.header-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(3%);
-    -webkit-transform: translateX(3%);
-    -moz-transform: translateX(3%);
-    -ms-transform: translateX(3%);
-    -o-transform: translateX(3%);
 }
 
 .about-text {
@@ -124,30 +119,11 @@ article.header-title {
     padding-bottom: 2.222rem;
 }
 
-.btn {
-    transition: 0.2s ease-in;
-    -webkit-transition: 0.2s ease-in;
-    -moz-transition: 0.2s ease-in;
-    -ms-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    display: flex;
-    width: fit-content;
-    clip-path: polygon(1% 5%, 100% 0, 100% 100%, 0 100%);
-}
 
 .btn-full-story {
     background-color: var(--yellow);
 }
 
-.btn > a {
-    text-decoration: none;
-    color: var(--white);
-    padding: 18px 50px 18px 50px;
-}
-
-.btn:hover {
-    background-color: var(--darkyellow);
-}
 
 .about-text > p:nth-child(1) {
     padding-bottom: 1px;
@@ -172,56 +148,6 @@ article.header-title {
 
 .events {
     background-color: var(--bage);
-}
-
-.new-single {
-    background: url("../img/Homepage/New_single.jpg");
-    text-align: center;
-    margin-top: 330px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    padding: 70px 0 50px 0;
-    clip-path: polygon(3% 0, 100% 0, 97% 100%, 0% 100%);
-}
-
-.y-h2-title {
-    font-size: 1.944rem;
-    color: var(--yellow);
-    padding-bottom: 20px;
-}
-
-.new-single p {
-    max-width: 788px;
-    margin: 0 auto;
-    line-height: 1.777;
-    color: var(--white);
-}
-
-.listen-on h4 {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--yellow);
-    padding: 40px 0 20px 0;
-}
-
-.listen-on a, .social-media a {
-    text-decoration: none;
-    color: var(--white);
-    padding: 0 18px 0 0;
-}
-
-#icon-background {
-    transition: 0.2s ease-in;
-    -webkit-transition: 0.2s ease-in;
-    -moz-transition: 0.2s ease-in;
-    -ms-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-}
-#icon-background:hover {
-    fill: var(--darkyellow);
 }
 
 
