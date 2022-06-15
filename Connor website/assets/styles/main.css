@@ -14,6 +14,8 @@
     --darkbrown: #241B06; /* For background and text */
     --darkyellow: #D59700; /* For yellow hovers */
     --yellow: #F8B000; /* Main yellow */
+    --darkeryellow: #83550c; /* Copyright text */
+    --darkbage: #E8E2D7; /* Scrollbar background */
 }
 
 html {
@@ -48,6 +50,9 @@ body {
 
 .nav-links > ul > li {
     list-style-type: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-links > ul > li > a {
@@ -65,4 +70,152 @@ body {
     color: var(--yellow);
 }
 
+.nav-links > ul > li > a.active {
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.hovericon {
+    display: none;
+}
+
+.nav-links > ul > li > a:hover + .hovericon {
+    display: flex;
+    position: absolute;
+    top: 35px;
+}
+
+.nav-links > ul > li > a.active + .hovericon {
+    display: flex;
+    position: absolute;
+    top: 35px;
+}
+
 /* Main navigation ends */
+
+/* Contact section starts */
+
+.contact p {
+    padding-top: 25px;
+    color: var(--white);
+}
+
+.contact {
+    text-align: center;
+    background-color: var(--darkbrown);
+    padding: 80px 0 80px 0;
+}
+
+.btn-contact-me {
+    background-color: var(--terrakota);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* Contact section ends */
+
+/* Footer section starts */
+
+footer {
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.footer-nav {
+    padding: 50px 0 50px 0;
+}
+
+.footer-nav > ul {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.footer-nav > ul > li > a:hover {
+    color: var(--darkbrown);
+}
+
+.footer-nav > ul > li > a.active {
+    color: var(--darkbrown);
+    font-weight: 500;
+}
+
+
+/* Footer section ends */
+
+/* Copyright section starts */
+
+.copyright {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: var(--darkyellow);
+    color: var(--darkeryellow);
+}
+
+.copyright a {
+    color: var(--darkeryellow);
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+}
+
+.copyright a:hover {
+    color: var(--darkbrown);
+}
+
+/* Copyright section ends */
+
+
+/* Back to top button starts */
+
+.btn-top {
+    display: none;
+}
+
+.btn-top a {
+    background-color: var(--darkbrown);
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 30px;
+    padding: 17px;
+    transition: 0.1s ease-in;
+    -webkit-transition: 0.1s ease-in;
+    -moz-transition: 0.1s ease-in;
+    -ms-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+}
+
+
+.btn-top a:hover {
+    margin-bottom: 5px;
+    padding-bottom: 22px;
+}
+
+
+/* Back to top button ends */
+
+/* Custom scrollbar starts */
+
+::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #E8E2D7; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--darkyellow)
+  }
+
+/* Custom scrollbar ends */
