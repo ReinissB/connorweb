@@ -7,7 +7,7 @@
 
 :root {
     --bage: #FCF8F1; /* For backgrounds */
-    --lightbage: #F8F0E6; /* For albums page extra album */
+    --darkerbage: #F8F0E6; /* For albums page extra album */
     --grey: #777167; /* For text light background */
     --white: #FFFFFF; /* For white backgrounds */
     --terrakota: #C6896B; 
@@ -15,7 +15,7 @@
     --darkyellow: #D59700; /* For yellow hovers */
     --yellow: #F8B000; /* Main yellow */
     --darkeryellow: #83550c; /* Copyright text */
-    --darkbage: #E8E2D7; /* Scrollbar background */
+    --darkestbage: #E8E2D7; /* Scrollbar background */
 }
 
 html {
@@ -213,7 +213,7 @@ footer {
   }
 
   ::-webkit-scrollbar-track {
-    background: #E8E2D7; 
+    background: var(--darkestbage);
   }
    
   /* Handle */
