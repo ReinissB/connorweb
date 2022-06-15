@@ -31,44 +31,34 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 10px;
     margin-bottom: 4rem;
 }
 
-.first {
-    position: relative;
+.content {
+    position: relative; 
+    cursor: pointer;
 }
+
+ .img-overlay {
+    position: absolute;
+    opacity: 0;
+    background: rgba(52, 38, 38, 0.534);
+    transition: .5s ease;
+}
+
+.content:hover .img-overlay {
+    opacity: 1;
+}
+
+/* Small pictures */
 
 .img-1row-1st {
     grid-column: 1/2;
     grid-row: 1/2;
-    opacity: 1;
-    display: block;
-    transition: .5s ease-in-out;
-    backface-visibility: hidden;
-}
-
-.img-text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.first:hover .img-text {
-    opacity: 1;
-}
-
-.first:hover .img-1row-1st {
-    opacity: 0.5;
 }
 
 .img-1row-2nd {
@@ -76,23 +66,13 @@ body {
     grid-row: 2/3;
 }
 
-.img-1row-3rd-big {
-    grid-column: 2/5;
-    grid-row: 1/3;  
-}
-
-.img-2row-1st-big {
-    grid-column: 1/3;
-    grid-row: 3/5;
-}
-
-.img-2row-2nd {
-    grid-column: 4/5;
+/* .img-2row-2nd {
+    grid-column: 3/4;
     grid-row: 3/4;
 }
 
 .img-2row-3rd {
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 4/5;
 }
 
@@ -104,14 +84,41 @@ body {
 .img-3row-2nd {
     grid-column: 1/2;
     grid-row: 6/7;
+} */
+
+
+/* Big pictures */
+.img-1row-3rd-big {
+    grid-column: 2/4;
+    grid-row: 1/3;  
+}
+
+/* .img-2row-1st-big {
+    grid-column: 1/3;
+    grid-row: 3/5;
 }
 
 .img-3row-3rd-big {
     grid-column: 2/4;
     grid-row: 5/7;
+} */ 
+
+ .img-text-big {
+    color: white;
+    font-size: 20px;
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.musicpage-btn {
+
+/* Go to Songs & Albums page btn */
+
+/* .musicpage-btn {
     display: flex;
     background-color: var(--terrakota);
     text-align: center;
@@ -132,4 +139,4 @@ h5 > a {
 
 .musicpage-btn:hover {
     background-color: var(--darkyellow);
-}
+} */  
