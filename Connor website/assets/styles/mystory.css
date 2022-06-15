@@ -1,12 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    background-color: var(--bage);
-}
 
 /* Introduction */
 
@@ -155,7 +146,7 @@ h2 {
 }
 
 
-/* Go to song page section */
+/* Go to music page section */
 
 .story-musicpage {
     grid-column: 2/3;
@@ -191,4 +182,9 @@ h5 {
 
 .musicpage-btn:hover {
     background-color: var(--darkyellow);
+}
+
+/* Go to contact me page (different button) */
+.btn-contact-me-mystory {
+    
 }
