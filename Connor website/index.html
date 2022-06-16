@@ -162,16 +162,14 @@
         <div class="upper-line">
           <h2>Upcoming events</h2>
           <div class="filter-nav">
-            <ul>
-              <li><a href="#">All</a></li>
-              <li><a href="#">Albums / Singles</a></li>
-              <li><a href="#">Concerts</a></li>
-            </ul>
+              <p class="filter" data-filter="all">All</p>
+              <p class="filter" data-filter="albumsSingles">Albums / Singles</p>
+              <p class="filter" data-filter="concerts">Concerts</p>
           </div>
         </div>
 
         <section class="upcoming-events-cards">
-          <article class="event-card" id="concert">
+          <article class="event-card" data-filter="concerts">
             <section class="thumbnail">
               <h2 class="img-date">12.<br>Jul.</h2>
               <img src="assets/img/Homepage/Aalborg.jpg" alt="Image of a street in Aalborg">
@@ -187,53 +185,126 @@
               </p>
               <div class="date-place">
                 <p class="date"><time datetime="2022-07-12">12 July, 2022</p>
-                <address class="location">Aalborg, Denmark</address>
+                <address class="location" >Aalborg, Denmark</address>
               </div>
             </div>
           </article>
 
-          <article class="event-card" id="concert">
+          <article class="event-card" data-filter="concerts">
             <section class="thumbnail">
-              <h2 class="img-date">12.<br>Jul.</h2>
-              <img src="assets/img/Homepage/Aalborg.jpg" alt="Image of a street in Aalborg">
+              <h2 class="img-date">30.<br>Sep.</h2>
+              <img src="assets/img/Homepage/copenhagen.jpg" alt="Image of a street in Aalborg">
             </section>
             <div class="event-content">
               <h5 class="filter-cat">Concert</h5>
-              <h3 class="event-title">Connor Fernandez in Aalborg</h3>
-              <p>I am very happy to announce my “little” concert tour across
-                couple of places, and as a first concert destination I have
-                chosen my current city - Aalborg - I would be very happy to
-                see you joining me and my friends. Concert location and
-                precise time will be posted soon, entrance - for free.
+              <h3 class="event-title">Connor Fernandez in Copenhagen</h3>
+              <p>As second destination for my concert place I’ve chosen the lovely capital city 
+                of Denmark,  we will perform my songs, also the new single and some other 
+                band songs, which I really enjoy playing. Concert location and precise 
+                time will be posted soon, entrance - for free.
               </p>
               <div class="date-place">
-                <p class="date"><time datetime="2022-07-12">12 July, 2022</p>
-                <address class="location">Aalborg, Denmark</address>
+                <p class="date"><time datetime="2022-07-12">30 September, 2022</p>
+                <address class="location">Copenhagen, Denmark</address>
               </div>
             </div>
           </article>
 
-          <article class="event-card" id="concert">
+          <article class="event-card" data-filter="concerts">
             <section class="thumbnail">
-              <h2 class="img-date">12.<br>Jul.</h2>
-              <img src="assets/img/Homepage/Aalborg.jpg" alt="Image of a street in Aalborg">
+              <h2 class="img-date">13.<br>Oct.</h2>
+              <img src="assets/img/Homepage/Madrid.jpg" alt="Image of a street in Aalborg">
             </section>
             <div class="event-content">
               <h5 class="filter-cat">Concert</h5>
-              <h3 class="event-title">Connor Fernandez in Aalborg</h3>
-              <p>I am very happy to announce my “little” concert tour across
-                couple of places, and as a first concert destination I have
-                chosen my current city - Aalborg - I would be very happy to
-                see you joining me and my friends. Concert location and
-                precise time will be posted soon, entrance - for free.
+              <h3 class="event-title">Connor Fernandez in Madrid</h3>
+              <p>Diving more in to warmer places I invite you to come and see my concert 
+                at Madrid, guaranteeing you a wonderful warm night narrated by our music 
+                performance.  Concert location and precise time will be posted soon, 
+                entrance - for free.
               </p>
               <div class="date-place">
-                <p class="date"><time datetime="2022-07-12">12 July, 2022</p>
-                <address class="location">Aalborg, Denmark</address>
+                <p class="date"><time datetime="2022-07-12">13. October, 2022</p>
+                <address class="location">Madrid, Spain</address>
               </div>
             </div>
           </article>
 
+          <article class="event-card" data-filter="concerts">
+            <section class="thumbnail">
+              <h2 class="img-date">1st<br>Dec.</h2>
+              <img src="assets/img/Homepage/Buenos.jpg" alt="Image of a street in Aalborg">
+            </section>
+            <div class="event-content">
+              <h5 class="filter-cat">Concert</h5>
+              <h3 class="event-title">Connor Fernandez in Buenos Aires</h3>
+              <p>Bringing the sound of music with me back to my hometown I offer a 
+                wonderful, emotion fulfilled evening once again with me. Come and 
+                enjoy summer breeze, cold drink and wonderful compositions. Concert 
+                location and precise time will be posted soon, entrance - for free.
+              </p>
+              <div class="date-place">
+                <p class="date"><time datetime="2022-07-12">1st December, 2022</p>
+                <address class="location">Buenos Aires, Argentina</address>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-filter="albumsSingles">
+            <section class="thumbnail">
+              <h2 class="img-date">Jan.<br>2023.</h2>
+              <img src="assets/img/Homepage/Encrucijadas.jpg" alt="Image of a street in Aalborg">
+            </section>
+            <div class="event-content">
+              <h5 class="filter-cat">Albums / Singles</h5>
+              <h3 class="event-title">Encrucijadas</h3>
+              <p>A long waited single is taking its steps to be published soon.  
+                It tells about hard choices and crossroads — tough decisions for 
+                us to be made and I hope it resonates also with you. 
+                More information coming soon!
+              </p>
+              <div class="date-place">
+                <p class="date"><time datetime="2023-01-01">January, 2023</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-filter="albumsSingles">
+            <section class="thumbnail">
+              <h2 class="img-date">Jan.<br>2023.</h2>
+              <img src="assets/img/Homepage/Norrevand.jpg" alt="Image of a street in Aalborg">
+            </section>
+            <div class="event-content">
+              <h5 class="filter-cat">Albums / Singles</h5>
+              <h3 class="event-title">NØrreVand</h3>
+              <p>A song to remember - northern Denmark as a place of wind and 
+                cold but so much warmness at the same time,  dreams that were 
+                fulfilled and left us in peace. More information coming soon!
+              </p>
+              <div class="date-place">
+                <p class="date"><time datetime="2023-01-01">January, 2023</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card" data-filter="albumsSingles">
+            <section class="thumbnail">
+              <h2 class="img-date">Feb.<br>2023.</h2>
+              <img src="assets/img/Homepage/Wander_music.jpg" alt="Image of a street in Aalborg">
+            </section>
+            <div class="event-content">
+              <h5 class="filter-cat">Albums / Singles</h5>
+              <h3 class="event-title">Wander the roots of South American music</h3>
+              <p>South American music is as close to my hearth as anything, 
+                and to be able to perform and write such piece is truly an experience, 
+                so if you are interested in my view of it musically mentions this 
+                in your calendar. More information coming soon!
+              </p>
+              <div class="date-place">
+                <p class="date"><time datetime="2023-02-01">February, 2023</p>
+              </div>
+            </div>
+          </article>
         </section>
       </section>
 
