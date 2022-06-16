@@ -93,22 +93,20 @@
         <section class="contact-form">
             <form action="#">
                 <label for="fullname">Hey, my name is</label>
-                <input type="text" id="fullname" name="fullname" placeholder="your full name">
+                <input type="text" id="fullname" name="fullname" placeholder="your full name" required>
                 <label for="emailadress">, my email address is</label>
-                <input type="text" id="emailadress" name="emailadress" placeholder="your email address"><br>
+                <input type="text" id="emailadress" name="emailadress" placeholder="your email address" required><br>
 
                 <label for="choose-subject">My message is related to</label>
-                <select name="subjects" id="subjects">
+                <select name="subjects" id="subjects" required>
                     <option placeholder="select">choose subject</option>
                     <option value="music-collab">Music collaborations</option>
                     <option value="concerts-jams">Concerts & Jams</option>
                     <option value="other">Other</option>
                 </select>
                 <label for="message-text">, and I would like to talk about...</label><br>
-                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-                <div class="send-btn">
+                <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
                   <input type="button" value="Send the message">
-                </div>
             </form>
         </section>
       </div>
