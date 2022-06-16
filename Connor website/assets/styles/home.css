@@ -154,6 +154,7 @@ article.header-title {
 /* Upcoming events */
 
 .upcoming-events {
+    margin-top: 70px;
     transform: translateY(-5%);
     -webkit-transform: translateY(-5%);
     -moz-transform: translateY(-5%);
@@ -174,14 +175,14 @@ article.header-title {
     margin-bottom: 50px;
 }
 
-.filter-nav > ul {
+.filter-nav {
     list-style-type: none;
     display: flex;
     gap: 40px;
+    cursor: pointer;
 }
 
-.filter-nav > ul > li > a {
-    text-decoration: none;
+.filter-nav > p {
     color: var(--grey);
     transition: 0.2s ease-in;
     -webkit-transition: 0.2s ease-in;
@@ -190,7 +191,7 @@ article.header-title {
     -o-transition: 0.2s ease-in;
 }
 
-.filter-nav > ul > li > a:hover {
+.filter-nav > p:hover {
     color: var(--yellow);
 }
 
@@ -280,7 +281,77 @@ h2.img-date {
     font-weight: 600;
 }
 
+.cardExpand {
+    display: none;
+}
+
+.btn-show-events {
+    border: 4px solid var(--terrakota);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.btn-show-events:hover {
+    background-color: var(--yellow);
+    border: 4px solid var(--yellow);
+}
+
+.btn-show-events:hover  a {
+    color: var(--white);
+}
+
+.btn-show-events a {
+    color: var(--terrakota);
+}
+
+#cardExpand {
+    display: none;
+}
+
 /* Upcoming events section ends */
 /* Events section ends */
 
+/***************************************************************************************
+*    Title: <Simple Vanilla JS Filtering>
+*    Author: <Skandalis Vlassis>
+*    Date: <Unknown>
+*    Code version: <V1>
+*    Availability: <https://codepen.io/vskand/pen/MWKKKYK>
+*
+***************************************************************************************/
 
+.hide { 
+    animation: hide .5s ease 0s 1 normal forwards;
+    transform-origin: center;
+  }
+
+.show { 
+      animation: show .5s ease 0s 1 normal forwards;    
+      transform-origin: center;
+  }
+
+  @keyframes hide {
+    0%{
+      transform: scale(1);        
+    }
+    100% {
+      transform: scale(0);        
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+  }
+
+  @keyframes show {
+    0%{
+      transform: scale(0);     
+      width: 0;
+      height: 0;
+      margin: 0;   
+    }
+    100% {
+      transform: scale(1);    
+    }
+  }
+
+  /***************************************************************************************/
