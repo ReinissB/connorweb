@@ -21,6 +21,8 @@ function scrollDown() {
 
 // REFERENCE TO W3 SCHOOLS!!!!
 
+// Adds the back-to-top button
+
 mybutton = document.getElementById("btnTop"); // Selects the button from the HTML
 
 window.onscroll = function() {scrollFunction()};
@@ -36,3 +38,5 @@ function scrollFunction() { // declaring the function
 function toTop() { // Scroll to top function
   document.documentElement.scrollTop = 0;
 }
+
+
