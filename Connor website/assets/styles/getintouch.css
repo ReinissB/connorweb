@@ -96,6 +96,7 @@ input[type=text], select, textarea, input[type=submit], input[type=email] {
   input[type=submit] {
     background-color: var(--yellow);
     border: none;
+    font-size: 16px;
     padding: 15px 45px;
     color: var(--white);
     cursor: pointer;
