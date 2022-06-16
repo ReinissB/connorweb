@@ -1,0 +1,94 @@
+
+header {
+    background-color: var(--darkbrown);
+    height: 20vh;
+}
+
+main {
+    background-color: var(--bage);
+}
+
+.git-intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+.git-intro-text {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.git-intro-text > h2 {
+    padding-bottom: 20px;
+    color: var(--darkbrown);
+    font-weight: 500;
+}
+
+.git-location, .git-location-box {
+    display: flex;
+}
+
+.git-location {
+    margin: 60px 0;
+}
+
+.git-location-box {
+    background-color: var(--terrakota);
+    padding: 30px 50px;
+    margin: 0 40px;
+}
+.git-location-box > div {
+    margin-left: 15px;
+    color: var(--white);
+}
+
+.git-location > svg {
+    height: auto;
+}
+
+.contact-form {
+    margin: auto;
+    max-width: 65vw;
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 5px 10px;
+    border-width: 0 0 3px;
+    margin-top: 25px;
+   
+}
+
+input[type=text], select, textarea, input[type=button] {
+    font-family: "Poppins", sans-serif;
+    border-color: var(--grey);
+    background-color: transparent;
+}
+
+  textarea {
+    width: 100%;
+    height: 233px;
+
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input:focus, textarea:focus {
+    border-color: var(--yellow);
+    outline: none;
+  }
+
+  input[type=button] {
+    background-color: var(--yellow);
+    border: none;
+    padding: 15px 45px;
+    color: var(--white);
+  }
+
+  input[type=button]:hover {
+    background-color: var(--darkyellow);
+  }
