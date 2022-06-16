@@ -184,7 +184,14 @@ h5 {
     background-color: var(--darkyellow);
 }
 
-/* Go to contact me page (different button) */
-.btn-contact-me-mystory {
-    
+/* Main navigation starts */
+
+header {
+    background-color: var(--darkbrown);
 }
+
+.main-nav {
+    padding-bottom: 50px;
+}
+
+/* Main navigation ends */
