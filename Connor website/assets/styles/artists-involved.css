@@ -1,0 +1,206 @@
+body {
+    background-color: var(--bage);
+}
+
+/* Main navigation starts */
+
+header {
+    background-color: var(--darkbrown);
+}
+
+.main-nav {
+    padding-bottom: 50px;
+}
+
+/* Main navigation ends */
+
+/* Gallery intro */
+
+.gallery-intro {
+    display: flex;
+    margin: 4rem 0;  
+}
+
+
+.gallery-intro-text > h2 {
+    color: var(--darkbrown);
+    font-size: 2rem;
+    margin: 0.6rem 0 1rem 0;
+}
+
+.gallery-intro-text > p {
+    color: var(--grey);
+}
+
+
+/* Gallery */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+    margin-bottom: 4rem; 
+}
+
+.content {
+    position: relative; 
+    cursor: pointer;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    backdrop-filter: blur(15px); 
+    background: rgba(255, 255, 255, -2);
+    transition: .5s ease;
+}
+
+.content:hover .img-overlay {
+    opacity: 1;
+}
+
+/* Small pictures */
+
+.img-1row-1st {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img-1row-2nd {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.img-2row-2nd {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.img-2row-3rd {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+ 
+.img-3row-1st {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.img-3row-2nd {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}  
+
+.img-overlay-small {
+    padding: 6rem 3rem;
+    height: 384px;
+}
+
+.img-text-small {
+    color: var(--white);   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -51%);
+    -ms-transform: translate(-50%, -51%);
+    transform: translate(-50%, -51%);
+    text-align: center;
+    width: 384px;
+    height: 384px;
+}
+
+.img-text-small > h2 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.img-text-small > p {
+    font-size: 16px;
+    margin-bottom: 0.6rem;
+}
+
+.insta-link > p  > a {
+    font-size: 14px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.insta-link {
+    display: inline-flex;
+}
+
+#ic_insta {
+    position: relative;
+    top: 7px;
+    margin-right: 0.7rem;
+}
+
+
+/* Big pictures */
+
+.img-1row-3rd-big {
+    grid-column: 2/4;
+    grid-row: 1/3;  
+}
+
+.img-2row-1st-big {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.img-3row-3rd-big {
+    grid-column: 2/4;
+    grid-row: 5/7;
+} 
+
+.img-overlay-big {
+    padding: 16rem 10rem;
+}
+
+.img-text-big {
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50.5%);
+    -ms-transform: translate(-50%, -50.5%);
+    transform: translate(-50%, -50.5%);
+    text-align: center;
+    width: 788px;
+    height: 788px; 
+}
+
+.img-text-big > h2 {
+    font-size: 36px;
+    margin-bottom: 3rem;
+} 
+
+
+/* Go to Songs & Albums page btn */ 
+
+.musicpage-btn {
+    display: flex;
+    background-color: var(--terrakota);
+    text-align: center;
+    margin: 2rem 7.5rem;
+    padding: 1rem 2rem;
+    clip-path: polygon(1% 5%, 100% 0, 100% 100%, 0 100%);
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -ms-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+} 
+
+.musicpage-btn > p > a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.musicpage-btn:hover {
+    background-color: var(--darkyellow);
+} 
