@@ -99,6 +99,12 @@ body {
     fill: #fff;
 }
 
+.cls-5 {
+    fill: none;
+    stroke: #f8b000;
+    stroke-width: 4px;
+  }
+
 /* Main navigation ends */
 
 /* Contact section starts */
@@ -150,6 +156,7 @@ footer {
     text-align: center;
     padding: 50px 0 50px 0;
 }
+
 
 .footer-nav {
     padding: 50px 0 50px 0;
