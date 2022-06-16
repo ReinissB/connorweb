@@ -38,5 +38,3 @@ function scrollFunction() { // declaring the function
 function toTop() { // Scroll to top function
   document.documentElement.scrollTop = 0;
 }
-
-

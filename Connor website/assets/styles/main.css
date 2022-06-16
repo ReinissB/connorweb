@@ -99,6 +99,12 @@ body {
     fill: #fff;
 }
 
+.cls-5 {
+    fill: none;
+    stroke: #f8b000;
+    stroke-width: 4px;
+  }
+
 /* Main navigation ends */
 
 /* Contact section starts */
