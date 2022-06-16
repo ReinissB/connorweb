@@ -150,7 +150,7 @@ header {
 .btn-download a::before {
     content: "";
     display: flex;
-    background: url('../img/ic_download.svg') no-repeat;
+    background: url('../img/ic_external.svg') no-repeat;
     float: left;
     width: 24px;
     height: 24px;
