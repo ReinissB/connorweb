@@ -19,6 +19,8 @@ header {
 
 article.header-title {
     margin-top: 16vh;
+    animation-duration: 1s;
+    animation-name: title;
 }
 
 .h-under-title {
@@ -36,11 +38,34 @@ article.header-title {
     padding: 15px 0 20px 0px;
 }
 
+@keyframes title {
+    0% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+}
+
 .scroll-down {
     display: flex;
     position: absolute;
     bottom: 10vh;
+    animation-duration: 1s;
+    animation-name: scroll;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateY(100vh);
+        -webkit-transform: translateY(100vh);
+        -moz-transform: translateY(100vh);
+        -ms-transform: translateY(100vh);
+        -o-transform: translateY(100vh);
+}
+}
+
 .scroll-down > p {
     color: var(--white);
     cursor: pointer;
@@ -73,12 +98,24 @@ article.header-title {
     max-width: 1192px;
     margin: 0 auto;
     position: relative;
+    animation-duration: 1s;
+    animation-name: curvy;
+}
+
+@keyframes curvy {
+    0% {
+        transform: translateY(100vh);
+        -webkit-transform: translateY(100vh);
+        -moz-transform: translateY(100vh);
+        -ms-transform: translateY(100vh);
+        -o-transform: translateY(100vh);
+}
+
 }
 
 .curvy-vertical {
     position: absolute;
     right: 0;
-    bottom: -10vh;
 }
 
 
@@ -106,7 +143,6 @@ article.header-title {
     -o-transform: translateX(-15%);
     max-width: 586px;
 }
-
 
 .about-text > h2 {
     font-size: 1.666rem;
