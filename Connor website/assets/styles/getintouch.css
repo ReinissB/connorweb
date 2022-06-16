@@ -1,0 +1,107 @@
+
+
+main {
+    background-color: var(--bage);
+    padding-bottom: 4rem;
+}
+
+
+/* Navigation */
+header {
+    background-color: var(--darkbrown);
+}
+
+.main-nav {
+    padding-bottom: 50px;
+}
+
+
+/* Intoduction text */
+.git-intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+.git-intro-text {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.git-intro-text > h2 {
+    padding-bottom: 20px;
+    color: var(--darkbrown);
+    font-weight: 500;
+}
+
+
+/* Location section */
+.git-location, .git-location-box {
+    display: flex;
+}
+
+.git-location {
+    margin: 60px 0;
+}
+
+.git-location-box {
+    background-color: var(--terrakota);
+    padding: 30px 50px;
+    margin: 0 40px;
+}
+.git-location-box > div {
+    margin-left: 15px;
+    color: var(--white);
+}
+
+.git-location > svg {
+    height: auto;
+}
+
+
+/* Contact form */
+.contact-form {
+    justify-content: center;
+    display: flex;
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 5px 10px;
+    border-width: 0 0 3px;
+    margin-top: 25px;
+   
+}
+
+input[type=text], select, textarea, input[type=button] {
+    font-family: "Poppins", sans-serif;
+    border-color: var(--grey);
+    background-color: transparent;
+}
+
+  textarea {
+    width: 100%;
+    height: 233px;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input:focus, textarea:focus {
+    border-color: var(--yellow);
+    outline: none;
+  }
+
+  input[type=button] {
+    background-color: var(--yellow);
+    border: none;
+    padding: 15px 45px;
+    color: var(--white);
+}
+
+  input[type=button]:hover {
+    background-color: var(--darkyellow);
+  }
+
+
